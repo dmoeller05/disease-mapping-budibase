@@ -32,23 +32,41 @@ Make sure the following are installed:
 - Git ≥ 2.30
 
 ---
-
 ## 🚀 Setup Instructions
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/D-Robot-M/disease-mapping-budibase.git
-   cd disease-mapping-budibase
-2. **Create .env file**:
-Copy to `.env` and fill in your secrets
-   ```bash
+### 📄 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/disease-mapping-budibase.git
+cd disease-mapping-budibase
+```
+
+### 📄 2. Create `.env` File
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env
+```
+
+Then open the `.env` file and fill in your secrets:
+
+```env
 JWT_SECRET=your_jwt_secret
 ENCRYPTION_SECRET=your_encryption_secret
 COUCH_DB_PASSWORD=your_couch_password
+COUCH_DB_USER=admin
+COUCH_DB_URL=http://couchdb:5984
+MINIO_ACCESS_KEY=your_minio_access_key
+MINIO_SECRET_KEY=your_minio_secret_key
+```
+### 🚀 3. Start the Application
 
-2. **Start the application**:
-   ```bash
-   docker-compose up -d
+Use Docker Compose to start all required services:
+
+```bash
+docker-compose up -d
+```
 
 ## 🧩 Import Budibase App
 
