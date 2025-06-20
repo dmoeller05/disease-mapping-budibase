@@ -27,9 +27,9 @@ This application allows users to **Create, Read, Update, and Delete** disease ma
 
 Make sure the following are installed:
 
-Docker ≥ 20.10  
-Docker Compose ≥ 1.29
-Git ≥ 2.30
+- Docker ≥ 20.10  
+- Docker Compose ≥ 1.29
+- Git ≥ 2.30
 
 ---
 
@@ -41,9 +41,11 @@ Git ≥ 2.30
    cd disease-mapping-budibase
 2. **Create .env file**:
 Copy to `.env` and fill in your secrets
+   ```bash
 JWT_SECRET=your_jwt_secret
 ENCRYPTION_SECRET=your_encryption_secret
 COUCH_DB_PASSWORD=your_couch_password
+
 2. **Start the application**:
    ```bash
    docker-compose up -d
