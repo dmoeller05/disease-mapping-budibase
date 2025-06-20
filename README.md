@@ -39,6 +39,28 @@ Git ≥ 2.30
    ```bash
    git clone https://github.com/D-Robot-M/disease-mapping-budibase.git
    cd disease-mapping-budibase
+2. **Create .env file**:
+Copy to `.env` and fill in your secrets
+JWT_SECRET=your_jwt_secret
+ENCRYPTION_SECRET=your_encryption_secret
+COUCH_DB_PASSWORD=your_couch_password
 2. **Start the application**:
    ```bash
    docker-compose up -d
+
+## 🧩 Import Budibase App
+
+1. Go to [http://localhost:10000](http://localhost:10000)
+2. Click "Apps" > "Import App"
+3. Upload `budibase-exports/disease-mapping-app.tar`
+
+## 🖼️ Screenshots
+
+### 📝 List View
+![List View](screenshots/list-view.png)
+
+### ➕ Create Form
+![Create Form](screenshots/create-form.png)
+
+### ✏️ Edit Form
+![Edit Form](screenshots/edit-form.png)
